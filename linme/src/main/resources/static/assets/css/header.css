@@ -1,0 +1,73 @@
+/*************************/
+/* 토글버튼 */
+/*************************/
+.Topbutton {
+  position: fixed;
+  right: 63px;
+  z-index: 1000px;
+  bottom: 30px;
+}
+
+.Topbutton img {
+  width: 40px;
+}
+
+.headerBackground {
+  width: 100%;
+  /* background-color: rgb(237, 237, 209); */
+  /* height: 159px; */
+  border-bottom: 2px solid #c7c7c7;
+}
+
+.headerContainer {
+  height: 160px;
+  /* border: solid 1px brown; */
+  margin: 0 80px;
+
+  .headerBoxFirst {
+    border: solid 1px brown;
+    height: 40px;
+    display: flex;
+
+    ul {
+      display: flex;
+      /* justify-content: flex-end; */
+      font-size: 13px;
+      font-weight: 500;
+
+      li{
+        color: #707070;
+        text-decoration: none;
+      }
+      span{
+        margin: 0 10px;
+        color: #eee;
+      }
+    }
+  }
+  .headerBoxSecond{
+    border: solid 1px brown;
+    height: 70px;
+    display: flex;
+
+    input{
+      display: flex;
+    }
+
+    .search{
+      width: 14px;
+    }
+
+    ul{
+      display: flex;
+    }
+
+
+  }
+
+  .headerBoxend{
+    border: solid 1px brown;
+    height: 50px;
+    display: flex;
+  }
+}

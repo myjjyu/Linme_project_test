@@ -4,10 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>린미 - 세상에 없던 H-커머스</title>
+    <link rel="stylesheet" href="../../static/assets/css/common.css" />
+    <link rel="stylesheet" href="../../static/assets/css/header.css" />
   </head>
   <body>
+    <div id="loading"></div>
+
+    <!-- 모든 화면 오른쪽 하단에 있는 토글버튼 -->
+    <div class="Topbutton">
+      <a href="#">
+<img src="../../static/assets/img/main/topToggle.png" alt="topToggle">
+</div>
+
+
     <header th:fragment="my-header">
-      <link rel="stylesheet" th:href=@{/assets/css/header.css} />
-    </header>
+      <!-- <link rel="stylesheet" th:href=@{/assets/css/header.css} /> -->
+
+    <div class="headerBackground"> 
+<div class="headerContainer">
+  <div class="headerBoxFirst">
+    <ul>
+      <li>로그인</li>
+      <span>|</span>
+      <li>회원가입</li>
+      <span>|</span>
+      <li>고객센터▼</li>
+    </ul>
+  </div>
+        <div class="headerBoxSecond">
+         <img src="../../static/assets/img/header/logo_top.png" alt="logo_top" width="82" height="41">
+         <form action="#">
+          <input type="text" placeholder="# 눈건강 #뼈건강">
+          <img class="search" src="../../static/assets/img/header/search_pink.png 09-45-25-523.png" alt="search">
+         </form>
+         <div>
+          <ul>
+          <li>
+            <a href="#">
+              <img src="../../static/assets/img/header/car.png" alt="car">
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="../../static/assets/img/header/cart.png" alt="cart">
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img src="../../static/assets/img/header/Notification.png" alt="Notification">
+            </a>
+          </li>
+        </ul>
+        </div>
+         
+        </div>
+        <div class="headerBoxend">box3
+          <!-- <div>box3-1</div>
+          <div>box3-2</div> -->
+        </div>
+</div>
+</div>
+    </header> 
   </body>
 </html>
