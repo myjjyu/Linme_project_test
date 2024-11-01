@@ -50,7 +50,6 @@
       font-weight: 500;
 
       li {
-        color: #707070;
         text-decoration: none;
         margin-left: 10px;
         position: relative;
@@ -211,15 +210,16 @@
 .list-group {
   border-radius: 0;
   border: 1px solid #f3f3f3;
-  margin-top: 7px;
-  max-height: 500px;
+  max-height: 600px;
+  width: 350px;
   overflow-y: auto; /* 스크롤 */
+  position: absolute;
+  top: 100%; /*부모 아래에 위치*/
 }
 
 /* 카테고리 리스트 기본 숨김 처리 */
 #categoryList {
   display: none;
-  width: 300px;
 }
 
 .list-group-item {
