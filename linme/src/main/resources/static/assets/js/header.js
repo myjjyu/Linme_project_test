@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       dropdownMenu.style.display === "block" ? "none" : "block";
   });
 
-  // 포커스 아웃 시 메뉴 숨기기
+  // 다시 클릭시 시 메뉴 숨기기
   document.addEventListener("click", function (event) {
     if (
       !customerServiceLink.contains(event.target) &&
@@ -24,14 +24,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/*****************************/
-// ham영역///
-/*****************************/
-document.querySelector(".login-button").addEventListener("click", (e) => {
-  document.querySelector(".black-bg").classList.toggle("show-modal");
-});
 
-// 닫기버튼 누르면 모달창 닫기
-document.querySelector("#close").addEventListener("click", (e) => {
-  document.querySelector(".black-bg").classList.remove("show-modal");
-});
+  /*****************************/
+  // 햄버거 카테고리 드롭다운///
+  /*****************************/
+  const categoryToggle = document.getElementById("categoryToggle");
+  const categoryList = document.getElementById("categoryList");
+
+  // 햄버거 버튼 클릭 시 카테고리 보이기
+  categoryToggle.addEventListener("click", function () {
+    // 카테고리 목록의 display 상태에 따라 'block' 또는 'none'으로 변경
+    categoryList.style.display = categoryList.style.display === "block" ? "none" : "block";
+  });
+
+  // 다시 클릭시 햄버거 드롭다운 메뉴 숨기기
+  document.addEventListener("click", function (event) {
+    if (
+      !customerServiceLink.contains(event.target) &&
+      !dropdownMenu.contains(event.target)
+    ) {
+      dropdownMenu.style.display = "none";
+    }
+  });
